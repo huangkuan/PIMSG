@@ -9,11 +9,35 @@
 import UIKit
 import Messages
 
+
 class MessagesViewController: MSMessagesAppViewController {
+    
+    @IBOutlet weak var TestButton: UIButton!
+    @IBAction func BtnTouchUpInside(_ sender: Any) {
+         NSLog("BtnTouchUpInside")
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        guard let conversation = activeConversation else { fatalError("Expected a conversation") }
+        
+        /*
+        let layout = MSMessageTemplateLayout()
+        layout.image = iceCream.renderSticker(opaque: true)
+        layout.caption = caption
+        
+        let message = MSMessage(session: session ?? MSSession())
+        message.url = components.url!
+        message.layout = layout
+        
+        conversation.insert(message) { error in
+            if let error = error {
+                print(error)
+            }
+        }
+         */
     }
     
     override func didReceiveMemoryWarning() {
