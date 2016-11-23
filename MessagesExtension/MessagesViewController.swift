@@ -23,8 +23,9 @@ class MessagesViewController: MSMessagesAppViewController {
         // Do any additional setup after loading the view.
         guard let conversation = activeConversation else { fatalError("Expected a conversation") }
         
-        /*
+        
         let layout = MSMessageTemplateLayout()
+        /*
         layout.image = iceCream.renderSticker(opaque: true)
         layout.caption = caption
         
