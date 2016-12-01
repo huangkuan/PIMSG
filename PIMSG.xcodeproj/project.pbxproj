@@ -13,6 +13,7 @@
 		6377A2B11DE4BA8100EA7A38 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6377A2B01DE4BA8100EA7A38 /* MessagesViewController.swift */; };
 		6377A2B41DE4BA8100EA7A38 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6377A2B21DE4BA8100EA7A38 /* MainInterface.storyboard */; };
 		6377A2B61DE4BA8100EA7A38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6377A2B51DE4BA8100EA7A38 /* Assets.xcassets */; };
+		773DE9F51DEF6DB9009D8887 /* unnamed.gif in Resources */ = {isa = PBXBuildFile; fileRef = 773DE9F41DEF6DB9009D8887 /* unnamed.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6377A2B31DE4BA8100EA7A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		6377A2B51DE4BA8100EA7A38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6377A2B71DE4BA8100EA7A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		773DE9F41DEF6DB9009D8887 /* unnamed.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = unnamed.gif; path = ../../../../Desktop/unnamed.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				6377A2B01DE4BA8100EA7A38 /* MessagesViewController.swift */,
 				6377A2B21DE4BA8100EA7A38 /* MainInterface.storyboard */,
 				6377A2B51DE4BA8100EA7A38 /* Assets.xcassets */,
+				773DE9F41DEF6DB9009D8887 /* unnamed.gif */,
 				6377A2B71DE4BA8100EA7A38 /* Info.plist */,
 			);
 			path = MessagesExtension;
@@ -201,6 +204,7 @@
 			files = (
 				6377A2B61DE4BA8100EA7A38 /* Assets.xcassets in Resources */,
 				6377A2B41DE4BA8100EA7A38 /* MainInterface.storyboard in Resources */,
+				773DE9F51DEF6DB9009D8887 /* unnamed.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +403,7 @@
 				6377A2BC1DE4BA8100EA7A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6377A2BE1DE4BA8100EA7A38 /* Build configuration list for PBXNativeTarget "PIMSG" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +412,7 @@
 				6377A2C01DE4BA8100EA7A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

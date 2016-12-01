@@ -14,31 +14,53 @@ class MessagesViewController: MSMessagesAppViewController {
     
     @IBOutlet weak var TestButton: UIButton!
     @IBAction func BtnTouchUpInside(_ sender: Any) {
-         NSLog("BtnTouchUpInside")
+        NSLog("BtnTouchUpInside")
+        let layout          = MSMessageTemplateLayout()
+        layout.image        = UIImage(named:"unnamed.gif")
+        //layout.caption  = "Caption Text"
+
+/*
+        guard let url = URL(string: "https://media.giphy.com/media/l2Jhu9OrGRImXT4Kk/200.gif") else { fatalError("cannot create URL")}
+        let urlRequest = URLRequest(url: url)
+        let task = URLSession.shared.dataTask(with: urlRequest, completionHandler: { (responseData, response, error) -> Void in
+            //print(responseData)
+            if let data = responseData{
+                layout.image = UIImage(data: data)
+            }
+            //layout.image = UIImage(data: responseData)
+            /*
+            if let data = response{
+                
+                // execute in UI thread
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    layout.image = UIImage(data: data)
+                })
+            }
+             */
+
+        })
+        task.resume()
+*/
         
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        guard let conversation = activeConversation else { fatalError("Expected a conversation") }
-        
-        
-        let layout = MSMessageTemplateLayout()
-        /*
-        layout.image = iceCream.renderSticker(opaque: true)
-        layout.caption = caption
-        
-        let message = MSMessage(session: session ?? MSSession())
-        message.url = components.url!
+
+
+        let message = MSMessage()
         message.layout = layout
-        
+        message.url = URL(string: "http://www.poncho.is")
+        guard let conversation = activeConversation else { fatalError("Expected a conversation") }
+
+        // Add the message to the conversation.
         conversation.insert(message) { error in
             if let error = error {
                 print(error)
             }
         }
-         */
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
     }
     
     override func didReceiveMemoryWarning() {
