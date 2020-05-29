@@ -11,4 +11,11 @@
   * [Transactions](data-sources/transactions.md)
   * [States](data-sources/states.md)
 * [Visualization](visualizations.md)
+* [Protocols](protocols/README.md)
+  * [Livepeer](protocols/livepeer.md)
+  * [Aragon](protocols/aragon.md)
+  * [Set Protocol](protocols/set-protocol.md)
+  * [Dydx](protocols/dydx.md)
+  * [Unlock Protocol](protocols/unlock-protocol.md)
+  * [Compound](protocols/compound.md)
 
